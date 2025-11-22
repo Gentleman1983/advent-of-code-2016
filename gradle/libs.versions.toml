@@ -1,5 +1,6 @@
 [versions]
 commons-codec = "1.18.0"
+groovy = "4.0.21"
 hamcrest = "3.0"
 junit5 = "5.12.2"
 kotlin-jvm = "2.1.21"
@@ -7,6 +8,7 @@ sonarqube-plugin = "6.2.0.5505"
 
 [libraries]
 commons-codec = { group = "commons-codec", name = "commons-codec", version.ref = "commons-codec" }
+groovy-all = { group = "org.apache.groovy", name = "groovy-all", version.ref = "groovy" }
 hamcrest = { group = "org.hamcrest", name = "hamcrest", version.ref = "hamcrest" }
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit5" }
 

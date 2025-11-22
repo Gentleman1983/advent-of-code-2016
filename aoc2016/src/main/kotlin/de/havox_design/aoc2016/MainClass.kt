@@ -22,6 +22,7 @@ import de.havox_design.aoc2016.day18.LikeARogue
 import de.havox_design.aoc2016.day19.AnElephantNamedJoseph
 import de.havox_design.aoc2016.day20.FirewallRules
 import de.havox_design.aoc2016.day21.ScrambledLettersAndHash
+import de.havox_design.aoc2016.day21.ScrambledLettersAndHashGroovy
 import de.havox_design.aoc2016.day22.GridComputing
 import de.havox_design.aoc2016.day23.SafeCracking
 import de.havox_design.aoc2016.day24.AirDuctSpelunking
@@ -302,14 +303,28 @@ class MainClass: AocMainClassHelper {
 
     private fun scrambledLettersAndHashPart1(): String {
         val filename = getFileName(21)
+        val result = StringBuilder()
 
-        return ScrambledLettersAndHash.processTask1(filename).toString()
+        result
+            .append("Groovy: ")
+            .append(ScrambledLettersAndHashGroovy.solvePart1(filename).toString())
+            .append(", Java: ")
+            .append(ScrambledLettersAndHash.processTask1(filename).toString())
+
+        return result.toString()
     }
 
     private fun scrambledLettersAndHashPart2(): String {
         val filename = getFileName(21)
+        val result = StringBuilder()
 
-        return ScrambledLettersAndHash.processTask2(filename).toString()
+        result
+            .append("Groovy: ")
+            .append(ScrambledLettersAndHashGroovy.solvePart2(filename).toString())
+            .append(", Java: ")
+            .append(ScrambledLettersAndHash.processTask2(filename).toString())
+
+        return result.toString()
     }
 
     companion object {

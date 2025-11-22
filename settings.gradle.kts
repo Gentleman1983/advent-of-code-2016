@@ -11,6 +11,7 @@ dependencyResolutionManagement {
 }
 
 include("aoc2016")
+include("aoc2016:aoc2016-groovy")
 include("aoc2016:aoc2016-java")
 include("aoc2016:aoc2016-kotlin")
 
